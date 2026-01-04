@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90650323876",
+    "project_id": "home-serve-cf091",
+    "storage_bucket": "home-serve-cf091.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90650323876:android:e207232cd948342ee9ef31",
+        "android_client_info": {
+          "package_name": "com.example.homeserve"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj3_K7pcMbXxjq8ILUaWyF0uvg3TMyXoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

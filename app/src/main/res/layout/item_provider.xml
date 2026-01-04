@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- Provider Name -->
+        <TextView
+            android:id="@+id/tvProviderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"/>
+        <TextView
+            android:id="@+id/tvProviderPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: 03001234567"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginTop="4dp" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL"
+            android:layout_marginTop="8dp"
+            app:cornerRadius="14dp" />
+
+        <TextView
+            android:id="@+id/tvProviderStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐⭐⭐⭐⭐"
+            android:textSize="14sp"
+            android:textColor="#FF9800"
+            android:layout_marginTop="8dp" />
+        <!-- Provider Category -->
+        <TextView
+            android:id="@+id/tvProviderCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electrician"
+            android:textSize="14sp"
+            android:textColor="#607D8B"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Book button -->
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="BOOK NOW"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1565C0"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

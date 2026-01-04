@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">HomeServe</string>
+    <string name="splash_title">HomeServe</string>
+    <string name="splash_tagline">Book Home Services Easily</string>
+    <string name="splash_icon_text">HS</string>
+    <string name="splash_tagline_long">Home services, booked in minutes</string>
+    <string name="login_welcome">Welcome Back 👋</string>
+    <string name="login_subtitle">Login to book home services</string>
+    <string name="login_title">Login</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="login_button">LOGIN</string>
+    <string name="login_register_prompt">Don\'t have an account? Register</string>
+    <string name="register_title">Create Account ✨</string>
+    <string name="register_subtitle">Register to book home services</string>
+    <string name="register_card_title">Register</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_password_register">Password (min 6 chars)</string>
+    <string name="register_button">REGISTER</string>
+    <string name="register_login_prompt">Already have an account? Login</string>
+    <string name="home_title">HomeServe</string>
+    <string name="home_choose_service">Choose a Service</string>
+    <string name="home_providers_near_you">We’ll show you providers near you</string>
+    <string name="my_bookings">MY BOOKINGS</string>
+    <string name="service_categories">Service Categories</string>
+    <string name="service_icon_placeholder">⚡</string>
+    <string name="service_name_placeholder">Electrician</string>
+    <string name="arrow">›</string>
+    <string name="providers_title">Providers</string>
+    <string name="provider_category">Category: %1$s</string>
+    <string name="no_providers_found">No providers found.</string>
+</resources>
