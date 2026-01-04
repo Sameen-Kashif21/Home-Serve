@@ -45,7 +45,8 @@
                 android:text="ACCEPT"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
-                android:backgroundTint="#2E7D32"
+                android:background="@drawable/bg_btn_accept"
+
                 app:cornerRadius="14dp" />
 
             <com.google.android.material.button.MaterialButton
@@ -57,7 +58,8 @@
                 android:text="DECLINE"
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
-                android:backgroundTint="#C62828"
+                android:background="@drawable/bg_btn_decline"
+
                 app:cornerRadius="14dp" />
 
         </LinearLayout>

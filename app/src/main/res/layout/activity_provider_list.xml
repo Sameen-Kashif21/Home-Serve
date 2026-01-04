@@ -21,7 +21,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#1565C0"
+            android:background="@drawable/bg_header_gradient"
+
             android:padding="18dp"
             android:orientation="vertical">
 
@@ -73,6 +74,9 @@
         app:layout_constraintTop_toTopOf="@id/rvProviders"
         app:layout_constraintBottom_toBottomOf="@id/rvProviders"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"
+        android:background="@drawable/bg_empty_pill"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

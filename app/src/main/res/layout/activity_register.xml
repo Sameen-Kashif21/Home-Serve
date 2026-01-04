@@ -11,7 +11,8 @@
         android:id="@+id/headerBlue"
         android:layout_width="0dp"
         android:layout_height="220dp"
-        android:background="#1565C0"
+        android:background="@drawable/bg_header_gradient"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -83,7 +84,8 @@
                 android:inputType="textPersonName"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/bg_input"
+
                 android:textColor="#222222"
                 android:textColorHint="#78909C"
                 android:autofillHints="name" />
@@ -101,7 +103,8 @@
                 android:inputType="textEmailAddress"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/bg_input"
+
                 android:textColor="#222222"
                 android:textColorHint="#78909C"
                 android:autofillHints="emailAddress" />
@@ -119,7 +122,8 @@
                 android:inputType="textPassword"
                 android:paddingStart="14dp"
                 android:paddingEnd="14dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/bg_input"
+
                 android:textColor="#222222"
                 android:textColorHint="#78909C"
                 android:autofillHints="newPassword" />

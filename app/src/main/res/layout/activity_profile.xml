@@ -58,7 +58,8 @@
                 android:text="LOGOUT"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
-                android:backgroundTint="#0D47A1"/>
+                android:background="@drawable/bg_btn_primary"
+                />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

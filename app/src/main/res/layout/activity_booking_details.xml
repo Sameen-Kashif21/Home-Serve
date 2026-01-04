@@ -11,7 +11,8 @@
         android:id="@+id/cardHeader"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/colorPrimary"
+        android:background="@drawable/bg_header_gradient"
+
         app:cardCornerRadius="22dp"
         app:cardElevation="8dp"
         app:cardUseCompatPadding="true"

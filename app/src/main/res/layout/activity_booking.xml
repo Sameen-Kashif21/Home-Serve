@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F9FF"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:overScrollMode="never">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -15,10 +16,11 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/headerCard"
             android:layout_width="0dp"
-            android:layout_height="150dp"
+            android:layout_height="170dp"
             android:layout_margin="16dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -26,27 +28,58 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#1565C0"
+                android:background="@drawable/bg_header_gradient"
                 android:padding="18dp"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/tvBookingTitle"
-                    android:layout_width="wrap_content"
+                <!-- Top row: logo + title -->
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Booking Details"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:textColor="#FFFFFF"/>
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <!-- NEW (safe): Logo -->
+                    <ImageView
+                        android:id="@+id/ivLogo"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:src="@drawable/ic_logo"
+                        android:contentDescription="App Logo"
+                        android:background="@drawable/bg_logo_circle"
+                        android:padding="6dp" />
+
+                    <TextView
+                        android:id="@+id/tvBookingTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:text="Booking Details"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:letterSpacing="0.02" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/tvProviderInfo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Provider: -"
                     android:textSize="14sp"
-                    android:textColor="#BBDEFB"
-                    android:layout_marginTop="8dp"/>
+                    android:textColor="#DCE9FF"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="2dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#33FFFFFF" />
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
@@ -58,8 +91,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="10dp"
+            android:layout_marginTop="6dp"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="12dp"
+            app:cardUseCompatPadding="true"
             app:layout_constraintTop_toBottomOf="@id/headerCard"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
@@ -70,112 +105,124 @@
                 android:padding="18dp"
                 android:orientation="vertical">
 
+                <!-- Date -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Select Date"
                     android:textStyle="bold"
-                    android:textColor="#263238"/>
+                    android:textColor="#0B1F3A"
+                    android:letterSpacing="0.02" />
 
                 <EditText
                     android:id="@+id/etDate"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="52dp"
                     android:hint="Tap to choose date"
                     android:focusable="false"
                     android:clickable="true"
                     android:paddingStart="14dp"
                     android:paddingEnd="14dp"
-                    android:background="@android:drawable/edit_text"
-                    android:textColor="#222222"
-                    android:textColorHint="#78909C"
-                    android:layout_marginTop="6dp"/>
+                    android:background="@drawable/bg_input"
+                    android:textColor="#0B1F3A"
+                    android:textColorHint="#6B7C93"
+                    android:layout_marginTop="8dp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="14dp"/>
+                    android:layout_height="14dp" />
 
+                <!-- Time -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Select Time"
                     android:textStyle="bold"
-                    android:textColor="#263238"/>
+                    android:textColor="#0B1F3A"
+                    android:letterSpacing="0.02" />
 
                 <EditText
                     android:id="@+id/etTime"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="52dp"
                     android:hint="Tap to choose time"
                     android:focusable="false"
                     android:clickable="true"
                     android:paddingStart="14dp"
                     android:paddingEnd="14dp"
-                    android:background="@android:drawable/edit_text"
-                    android:textColor="#222222"
-                    android:textColorHint="#78909C"
-                    android:layout_marginTop="6dp"/>
+                    android:background="@drawable/bg_input"
+                    android:textColor="#0B1F3A"
+                    android:textColorHint="#6B7C93"
+                    android:layout_marginTop="8dp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="14dp"/>
+                    android:layout_height="14dp" />
 
+                <!-- Address -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Address"
                     android:textStyle="bold"
-                    android:textColor="#263238"/>
+                    android:textColor="#0B1F3A"
+                    android:letterSpacing="0.02" />
 
                 <EditText
                     android:id="@+id/etAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_height="52dp"
                     android:hint="Enter your address"
                     android:inputType="textPostalAddress"
                     android:paddingStart="14dp"
                     android:paddingEnd="14dp"
-                    android:background="@android:drawable/edit_text"
-                    android:textColor="#222222"
-                    android:textColorHint="#78909C"
-                    android:layout_marginTop="6dp"/>
+                    android:background="@drawable/bg_input"
+                    android:textColor="#0B1F3A"
+                    android:textColorHint="#6B7C93"
+                    android:layout_marginTop="8dp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="14dp"/>
+                    android:layout_height="14dp" />
 
+                <!-- Problem Details -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Problem Details"
                     android:textStyle="bold"
-                    android:textColor="#263238"/>
+                    android:textColor="#0B1F3A"
+                    android:letterSpacing="0.02" />
 
                 <EditText
                     android:id="@+id/etDetails"
                     android:layout_width="match_parent"
-                    android:layout_height="110dp"
+                    android:layout_height="120dp"
                     android:hint="Describe your problem..."
                     android:gravity="top"
                     android:inputType="textMultiLine"
                     android:padding="14dp"
-                    android:background="@android:drawable/edit_text"
-                    android:textColor="#222222"
-                    android:textColorHint="#78909C"
-                    android:layout_marginTop="6dp"/>
+                    android:background="@drawable/bg_input"
+                    android:textColor="#0B1F3A"
+                    android:textColorHint="#6B7C93"
+                    android:layout_marginTop="8dp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="18dp"/>
+                    android:layout_height="18dp" />
 
+                <!-- Confirm button -->
                 <Button
                     android:id="@+id/btnConfirmBooking"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
+                    android:layout_height="54dp"
                     android:text="CONFIRM BOOKING"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF"
-                    android:backgroundTint="#1565C0"/>
+                    android:background="@drawable/bg_btn_primary"
+                    android:stateListAnimator="@null"
+                    android:elevation="0dp" />
+
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

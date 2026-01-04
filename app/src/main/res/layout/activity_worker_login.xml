@@ -81,14 +81,17 @@
                 android:textStyle="bold"
                 android:textColor="@android:color/white"
                 android:backgroundTint="#1565C0"
-                app:cornerRadius="16dp" />
+                app:cornerRadius="16dp"
+                app:icon="@drawable/ic_logo"
+                />
 
             <TextView
                 android:id="@+id/tvGoWorkerRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Don't have a worker account? Register"
-                android:textColor="#1565C0"
+                android:background="@drawable/bg_card_white"
+
                 android:textStyle="bold"
                 android:layout_marginTop="14dp"
                 android:layout_gravity="center" />

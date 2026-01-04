@@ -22,7 +22,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#1565C0"
+            android:background="@drawable/bg_header_gradient"
+
             android:padding="18dp">
 
             <!-- App name -->
@@ -46,7 +47,10 @@
                 android:textColor="@android:color/white"
                 android:padding="8dp"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentTop="true"/>
+                android:layout_alignParentTop="true"
+
+                android:background="@drawable/bg_menu_circle"
+                android:gravity="center"/>
 
             <!-- Heading -->
             <TextView
@@ -84,7 +88,8 @@
         android:text="@string/my_bookings"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#0D47A1"
+        android:background="@drawable/bg_btn_primary"
+
         app:layout_constraintTop_toBottomOf="@id/headerCard"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

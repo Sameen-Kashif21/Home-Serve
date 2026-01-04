@@ -11,7 +11,8 @@
         android:id="@+id/headerBlue"
         android:layout_width="0dp"
         android:layout_height="220dp"
-        android:background="#1565C0"
+        android:background="@drawable/bg_header_gradient"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -85,7 +86,8 @@
                 android:inputType="textEmailAddress"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/bg_input"
+
                 android:textColor="#222222"
                 android:textColorHint="#78909C"
                 android:autofillHints="emailAddress"/>
@@ -103,7 +105,8 @@
                 android:inputType="textPassword"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
-                android:background="@android:drawable/edit_text"
+                android:background="@drawable/bg_input"
+
                 android:textColor="#222222"
                 android:textColorHint="#78909C"
                 android:autofillHints="password"/>
@@ -119,8 +122,9 @@
                 android:layout_height="54dp"
                 android:text="@string/login_button"
                 android:textStyle="bold"
-                android:textColor="@android:color/white"
-                android:backgroundTint="#1565C0"/>
+
+                android:background="@drawable/bg_btn_primary"
+                />
 
             <TextView
                 android:id="@+id/tvForgotPassword"
@@ -141,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/login_register_prompt"
-                android:textColor="#1565C0"
+                android:textColor="#F5F9FFF6"
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
         </LinearLayout>
